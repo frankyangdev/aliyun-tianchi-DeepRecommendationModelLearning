@@ -1,4 +1,8 @@
-Code learning 
+#### understanding
+
+[T1 - DeepCrossing.md](https://github.com/frankyangdev/aliyun-tianchi-DeepRecommendationModelLearning/blob/main/T1%20-%20DeepCrossing.md)
+
+#### Code learning 
 
 1. [T1 - DeepCTR - dcn.py](https://github.com/frankyangdev/aliyun-tianchi-DeepRecommendationModelLearning/blob/main/T1%20-%20DeepCTR%20-%20dcn.py)
 
