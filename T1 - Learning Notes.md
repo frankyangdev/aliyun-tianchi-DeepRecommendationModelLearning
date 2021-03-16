@@ -1,4 +1,4 @@
-#### understanding
+#### Easy Understanding
 
 [T1 - DeepCrossing.md](https://github.com/frankyangdev/aliyun-tianchi-DeepRecommendationModelLearning/blob/main/T1%20-%20DeepCrossing.md)
 
