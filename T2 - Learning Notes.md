@@ -25,3 +25,20 @@ Deep侧就是DNN，通过embedding的方式将categorical/id特征映射成稠�
 
 #### [AdaGrad](https://blog.csdn.net/u010089444/article/details/76725843?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161614564616780262511289%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161614564616780262511289&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-6-76725843.first_rank_v2_pc_rank_v29&utm_term=Adagrad)
 ![image](https://user-images.githubusercontent.com/39177230/111758613-ac009e80-88d7-11eb-9e5b-dcbc596376be.png)
+
+
+#### Questions:
+
+#### 在你的应用场景中，哪些特征适合放在Wide侧，哪些特征适合放在Deep侧，为什么呢？
+Wide侧记住的是历史数据中那些常见、高频的模式
+Deep侧数值特征和类别特征的embedding特征
+
+
+#### 为什么Wide部分要用L1 FTRL训练？
+L1 FTLR是非常注重模型稀疏性质的，也就是说W&D模型采用L1 FTRL是想让Wide部分变得更加的稀疏，即Wide部分的大部分参数都为0，这就大大压缩了模型权重及特征向量的维度
+
+#### 为什么Deep部分不特别考虑稀疏性的问题？
+Deep部分是传统的前馈神经网络，对于定类特征，会先对其进行嵌入操作，即对每个类别特征嵌入到低维的稠密向量。
+
+[Wide&Deep versus DeepFM](https://blog.csdn.net/sinat_29819401/article/details/91359217?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161614607416780266229481%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=161614607416780266229481&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-11-91359217.first_rank_v2_pc_rank_v29&utm_term=wide+deep%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B)
+
