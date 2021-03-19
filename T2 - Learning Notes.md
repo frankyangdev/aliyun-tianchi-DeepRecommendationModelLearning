@@ -35,7 +35,7 @@ Deep侧就是DNN，通过embedding的方式将categorical/id特征映射成稠�
 #### Questions:
 
 #### 在你的应用场景中，哪些特征适合放在Wide侧，哪些特征适合放在Deep侧，为什么呢？
-Wide侧记住的是历史数据中那些常见、高频的模式
+Wide侧记住的是历史数据中那些常见、高频的模式,Wide侧就是普通LR，一般根据人工先验知识，将一些简单、明显的特征交叉，喂入Wide侧，让Wide侧能够记住这些规则。
 Deep侧数值特征和类别特征的embedding特征
 
 
@@ -44,6 +44,12 @@ L1 FTLR是非常注重模型稀疏性质的，也就是说W&D模型采用L1 FTRL
 
 #### 为什么Deep部分不特别考虑稀疏性的问题？
 Deep部分是传统的前馈神经网络，对于定类特征，会先对其进行嵌入操作，即对每个类别特征嵌入到低维的稠密向量。
+Deep侧就是DNN，通过embedding的方式将categorical/id特征映射成稠密向量，让DNN学习到这些特征之间的深层交叉，以增强扩展能力。
+
+关键在于Deep侧与Wide侧共享一个embedding矩阵来映射categorical/id特征到稠密向量
+Deep侧将embedding结果喂入DNN，来学习深层交互的权重，着重“扩展”
+Wide侧将embedding结果喂入FM，来学习二次交互的权重，着重“记忆”
+
 
 [Wide&Deep versus DeepFM](https://blog.csdn.net/sinat_29819401/article/details/91359217?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161614607416780266229481%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=161614607416780266229481&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-11-91359217.first_rank_v2_pc_rank_v29&utm_term=wide+deep%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B)
 
