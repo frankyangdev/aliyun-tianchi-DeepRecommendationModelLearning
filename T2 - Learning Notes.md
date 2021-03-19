@@ -1,3 +1,8 @@
+#### 推荐系统
+
+![image](https://user-images.githubusercontent.com/39177230/111759984-2bdb3880-88d9-11eb-8bd7-c07a759f0b23.png)
+
+
 #### [CNN、RNN、DNN区别](https://blog.csdn.net/lff1208/article/details/77717149)
 
 ![image](https://user-images.githubusercontent.com/39177230/111754741-4e6a5300-88d3-11eb-83aa-c7015afc501c.png)
