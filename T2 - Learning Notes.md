@@ -55,3 +55,5 @@ Wide侧将embedding结果喂入FM，来学习二次交互的权重，着重“�
 
 [详解 Wide & Deep 结构背后的动机](https://zhuanlan.zhihu.com/p/53361519)
 
+[详解 Wide & Deep推荐框架](https://mp.weixin.qq.com/s/NQ2jmzrvT3OwD02DAHCTwQ)
+
