@@ -45,6 +45,11 @@ DeepFM借鉴了Google的wide & deep的做法，其本质是
 ![image](https://user-images.githubusercontent.com/39177230/111905512-fe33f200-8a86-11eb-9e79-1d7182a5427a.png)
 
 
+#### Code example analysis
+
+[T3 - Code Analysis - DeepFM_Model.ipynb](https://github.com/frankyangdev/aliyun-tianchi-DeepRecommendationModelLearning/blob/main/T3%20-%20%20Code%20Analysis%20-%20DeepFM_Model.ipynb)
+
+
 
 
 
